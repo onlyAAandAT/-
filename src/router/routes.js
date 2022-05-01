@@ -94,22 +94,22 @@ export default [
     {
         path: '/paysuccess',
         name: 'paysuccess',
-        component: ()=>import('@/pages/paysuccess'),
+        component: ()=>import('@/pages/PaySuccess'),
         meta: { show: true }
     },
     {
         path: '/center',
         name: 'center',
-        component: ()=>import('@/pages/center'),
+        component: ()=>import('@/pages/Center'),
         // 二级路由
         children: [
             {
                 path: 'myorder',
-                component: ()=>import('@/pages/center/myorder'),
+                component: ()=>import('@/pages/Center/myOrder'),
             },
             {
                 path: 'grouporder',
-                component: ()=>import('@/pages/center/grouporder'),
+                component: ()=>import('@/pages/Center/groupOrder'),
             },
             {
                 path: '/center',
